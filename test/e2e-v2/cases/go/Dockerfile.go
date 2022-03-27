@@ -31,7 +31,7 @@ RUN rm ${GO2SKY_CODE}
 WORKDIR /go2sky/test/e2e/example-server
 RUN go build -o main
 
-FROM alpine:3.10
+FROM alpine:3.13.8
 
 COPY --from=builder /go2sky/test/e2e/example-server/main .
 ENTRYPOINT ["/main"]
