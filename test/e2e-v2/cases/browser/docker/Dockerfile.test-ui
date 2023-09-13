@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM node:10.23 AS builder
+FROM node:10.23@sha256:4fafd9b63fdfb15112775847a10b2917760c720c8c28cef5167ff40f36b3cd93 AS builder
 
 ## download and build skywalking client js
 ARG SW_AGENT_CLIENT_JS_COMMIT
@@ -43,7 +43,7 @@ RUN npm install \
     && npm link skywalking-client-js \
     && npm run build
 
-FROM nginx:1.19
+FROM nginx:1.19@sha256:df13abe416e37eb3db4722840dd479b00ba193ac6606e7902331dcea50f4f1f2
 
 COPY --from=builder /skywalking-client-test/dist/* /etc/nginx/html/
 COPY docker/nginx.conf /etc/nginx/nginx.conf
