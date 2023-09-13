@@ -43,7 +43,7 @@ RUN npm install \
     && npm link skywalking-client-js \
     && npm run build
 
-FROM nginx:1.19
+FROM nginx:1.19@sha256:df13abe416e37eb3db4722840dd479b00ba193ac6606e7902331dcea50f4f1f2
 
 COPY --from=builder /skywalking-client-test/dist/* /etc/nginx/html/
 COPY docker/nginx.conf /etc/nginx/nginx.conf
