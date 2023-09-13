@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM node:10.23 AS builder
+FROM node:10.23@sha256:4fafd9b63fdfb15112775847a10b2917760c720c8c28cef5167ff40f36b3cd93 AS builder
 
 ## download and build skywalking client js
 ARG SW_AGENT_CLIENT_JS_COMMIT
