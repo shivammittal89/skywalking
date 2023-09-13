@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM golang:1.13 AS builder
+FROM golang:1.13@sha256:8ebb6d5a48deef738381b56b1d4cd33d99a5d608e0d03c5fe8dfa3f68d41a1f8 AS builder
 
 ARG SW_AGENT_GO_COMMIT
 ARG GO2SKY_CODE=${SW_AGENT_GO_COMMIT}.tar.gz
