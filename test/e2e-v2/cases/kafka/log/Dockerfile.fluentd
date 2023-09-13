@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM bitnami/fluentd:1.12.1
+FROM bitnami/fluentd:1.12.1@sha256:762b6371e25075172d950c21194ea11a6bbdfbcbd55efcebb0a830b7c727739d
 
 ## Install output kafka plugins
 RUN fluent-gem install 'fluent-plugin-kafka'
