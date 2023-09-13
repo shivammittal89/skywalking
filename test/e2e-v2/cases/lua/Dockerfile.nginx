@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM openresty/openresty:1.17.8.2-5-alpine-fat
+FROM openresty/openresty:1.17.8.2-5-alpine-fat@sha256:d16404a7ea1fed5cd47c6f4e8bf501518b1fa20198f4156199b689aae4e049f9
 
 ARG SW_AGENT_NGINX_LUA_COMMIT
 
