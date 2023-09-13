@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM python:3.7
+FROM python:3.7@sha256:c366f91a3122236bfc7c92070334a12de94a39bff5cac500e216a7ecf47b1fdf
 ARG SW_AGENT_PYTHON_COMMIT
 
 WORKDIR /app
