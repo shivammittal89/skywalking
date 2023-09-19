@@ -39,7 +39,7 @@
         <h2.version>2.1.210</h2.version>
         <joda-time.version>2.10.5</joda-time.version>
         <zookeeper.version>3.5.7</zookeeper.version>
-        <guava.version>31.1-jre</guava.version>
+        <guava.version>32.0.0-jre</guava.version>
         <snakeyaml.version>1.28</snakeyaml.version>
         <protobuf-java.version>3.19.4</protobuf-java.version>
         <protobuf-java-util.version>3.19.4</protobuf-java-util.version>
